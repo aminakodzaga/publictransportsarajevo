@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vehicles.VehicleDetailsActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/applogo"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_margin="20dp"/>
+
+    <ImageView
+        android:id="@+id/company_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/vehicle_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle ID: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/company_logo"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/vehicle_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Type:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/vehicle_id"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/vehicle_manufacture_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date manufactured:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/vehicle_type"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/vehicle_registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registered:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/vehicle_manufacture_date"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/vehicle_id_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle ID: "
+        app:layout_constraintTop_toBottomOf="@id/company_logo"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@id/vehicle_id"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/vehicle_type_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start destination:"
+        app:layout_constraintTop_toBottomOf="@id/vehicle_id"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@id/vehicle_type"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/vehicle_manufacture_date_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End destination:"
+        app:layout_constraintTop_toBottomOf="@id/vehicle_type_value"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@id/vehicle_manufacture_date"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/vehicle_registered_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End destination:"
+        app:layout_constraintTop_toBottomOf="@id/vehicle_manufacture_date_value"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@id/vehicle_registered"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
